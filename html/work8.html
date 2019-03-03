@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/uan.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/jquery.js"></script>
+    <title>“神犬二白”表情包</title>
+</head>
+<body class="">
+    <div class="hd clearfix">
+        <div class="hd-icon fl"></div>
+        <ul class="hd-menu fr">
+            <li class="home" data-name="home">
+                <a href="https://lennonover.github.io/ccc/">HOME</a>
+            </li>
+            <li class="work ml24 mr24 active" data-name="work">
+                <a href="https://lennonover.github.io/ccc/#/work">WORKS</a>
+            </li>
+            <li class="about" data-name="about">
+                <a href="https://lennonover.github.io/ccc/#/about">ABOUT</a>
+            </li>
+        </ul>
+    </div>
+    <section class="works-info">
+        <div class="com-tit">
+            <h4>“神犬二白”表情包</h4>
+            <p>原创作品  /  动漫  /  网络表情</p>
+        </div>
+        <div class="book book8">
+            <p>
+                神犬二白的表情包是戊戌年生肖个性化邮票的卡通化延伸设计，<br>
+                希望这个小家伙能带给你快乐！ <br>
+            </p>
+            <img src="../images/8/1.jpg" alt="">
+            <div class="bqb">
+                <img src="../images/8/01.png" alt="">
+                <img src="../images/8/02.png" alt="">
+            </div>
+            <div class="bqb">
+                <img src="../images/8/03.png" alt="">
+                <img src="../images/8/04.png" alt="">
+            </div>
+            <div class="bqb">
+                <img src="../images/8/05.png" alt="">
+                <img src="../images/8/06.png" alt="">
+            </div>
+            <div class="bqb">
+                <img src="../images/8/07.png" alt="">
+                <img src="../images/8/08.png" alt="">
+            </div>
+            <div class="bqb">
+                <img src="../images/8/09.png" alt="">
+                <img src="../images/8/10.png" alt="">
+            </div>
+            <div class="bqb">
+                <img src="../images/8/11.png" alt="">
+                <img src="../images/8/12.png" alt="">
+            </div>
+            <div class="bqb">
+                <img src="../images/8/13.png" alt="">
+                <img src="../images/8/14.png" alt="">
+            </div>
+            <div class="bqb">
+                <img src="../images/8/15.png" alt="">
+                <img src="../images/8/16.png" alt="">
+            </div>
+            <img src="../images/8/2.jpg" alt="">
+        </div>
+    </section>
+    <div id="btn_top"></div>
+    <script >
+        (function(){
+           
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= 150) {
+                    $('#btn_top').fadeIn();
+                }
+                else {
+                    $('#btn_top').fadeOut();
+                }
+            });
+            $('#btn_top').click(function () {
+                $('html,body').animate({ scrollTop: 0 }, 500);
+            });
+        })()
+    </script>
+</body>
+</html>

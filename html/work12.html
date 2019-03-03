@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/uan.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/jquery.js"></script>
+    <title>摄影师遇到插画师</title>
+</head>
+<body class="">
+    <div class="hd clearfix">
+        <div class="hd-icon fl"></div>
+        <ul class="hd-menu fr">
+            <li class="home" data-name="home">
+                <a href="https://lennonover.github.io/ccc/">HOME</a>
+            </li>
+            <li class="work ml24 mr24 active" data-name="work">
+                <a href="https://lennonover.github.io/ccc/#/work">WORKS</a>
+            </li>
+            <li class="about" data-name="about">
+                <a href="https://lennonover.github.io/ccc/#/about">ABOUT</a>
+            </li>
+        </ul>
+    </div>
+    <section class="works-info">
+        <div class="com-tit">
+            <h4>摄影师遇到插画师</h4>
+            <p>原创作品  /  插画</p>
+        </div>
+        <div class="book">
+            <p>
+                努力做一个热爱生活的人，用画笔记录生活中的小乐趣。<br>
+            </p>
+            <img src="../images/12/1.jpg" alt="">
+            <img src="../images/12/2.jpg" alt="">
+            <img src="../images/12/3.jpg" alt="">
+            <img src="../images/12/4.jpg" alt="">
+            <img src="../images/12/5.jpg" alt="">
+            <img src="../images/12/6.jpg" alt="">
+            <img src="../images/12/7.jpg" alt="">
+            <img src="../images/12/8.jpg" alt="">
+            <img src="../images/12/9.jpg" alt="">
+            <img src="../images/12/10.jpg" alt="">
+            <img src="../images/12/11.jpg" alt="">
+        </div>
+    </section>
+    <div id="btn_top"></div>
+    <script >
+        (function(){
+           
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= 150) {
+                    $('#btn_top').fadeIn();
+                }
+                else {
+                    $('#btn_top').fadeOut();
+                }
+            });
+            $('#btn_top').click(function () {
+                $('html,body').animate({ scrollTop: 0 }, 500);
+            });
+        })()
+    </script>
+</body>
+</html>

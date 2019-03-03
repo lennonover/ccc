@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/uan.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/jquery.js"></script>
+    <title>香港情人节</title>
+</head>
+<body class="">
+    <div class="hd clearfix">
+        <div class="hd-icon fl"></div>
+        <ul class="hd-menu fr">
+            <li class="home" data-name="home">
+                <a href="https://lennonover.github.io/ccc/">HOME</a>
+            </li>
+            <li class="work ml24 mr24 active" data-name="work">
+                <a href="https://lennonover.github.io/ccc/#/work">WORKS</a>
+            </li>
+            <li class="about" data-name="about">
+                <a href="https://lennonover.github.io/ccc/#/about">ABOUT</a>
+            </li>
+        </ul>
+    </div>
+    <section class="works-info">
+        <div class="com-tit">
+            <h4>香港情人节</h4>
+            <p>原创作品  /  动漫  /  短篇动画</p>
+        </div>
+        <div class="book book7">
+            <p>
+                一座城市，一个节日。 男孩与女孩在这座城市里相识、相知、相恋。<br>
+                将香港城市的特色建筑与情人节的粉色浪漫结合，<br>
+                创作了这个充满粉红泡泡的小动画。<br>
+                
+                    
+            </p>
+            <video src="../images/7/1.swf"  controls autobuffer></video>
+            <p>动画主要涉及都市，牌坊，乐园与老街四个场景。</p>
+            <img src="../images/7/1.png" alt="">
+            <img src="../images/7/2.png" alt="">
+            <img src="../images/7/3.png" alt="">
+            <img src="../images/7/4.png" alt="">
+        </div>
+    </section>
+    <div id="btn_top"></div>
+    <script src="//api.html5media.info/1.2.2/html5media.min.js"></script>
+    <script >
+        (function(){
+           
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= 150) {
+                    $('#btn_top').fadeIn();
+                }
+                else {
+                    $('#btn_top').fadeOut();
+                }
+            });
+            $('#btn_top').click(function () {
+                $('html,body').animate({ scrollTop: 0 }, 500);
+            });
+        })()
+    </script>
+</body>
+</html>

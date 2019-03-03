@@ -6,31 +6,173 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/uan.css">
     <link rel="stylesheet" href="./css/common.css">
-    <script src="http://code.jquery.com/jquery-1.4.1.min.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/spaRouters.js"></script>
     <title>徐斐</title>
 </head>
-<body class="bd-home">
-    <div class="hd clearfix">
-        <div class="hd-icon fl"></div>
-        <ul class="hd-menu fr">
-            <li class="home active">
-                <a href="#">HOME</a>
-            </li>
-            <li class="work ml24 mr24">
-                <a href="#">WORKS</a>
-            </li>
-            <li class="about">
-                <a href="#">ABOUT</a>
-            </li>
-        </ul>
-    </div>
-    <div class="oh">
-        
+<body class="">
+    <div class="bd-cont">
+        <div class="hd clearfix">
+                <div class="hd-icon fl"></div>
+                <ul class="hd-menu fr">
+                    <li class="home" data-name="home">
+                        <a href="#/index">HOME</a>
+                    </li>
+                    <li class="work ml24 mr24" data-name="work">
+                        <a href="#/work">WORKS</a>
+                    </li>
+                    <li class="about" data-name="about">
+                        <a href="#/about">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+            <section class="oh"></section>
+            <section class='work-cont'>
+                <div class="pre disable"></div>
+                <div class="next"></div>
+                <div class="works">
+                    <ul>
+                        <li class='b1'>
+                            <a href="./html/work1.html">
+                                <p class='mt150'>插画习作</p>
+                                <span>插画</span>
+                            </a>
+                        </li><li class='b2'>
+                            <a href="./html/work2.html">
+                                <p class='mt150'>拟物图标及UI控件</p>
+                                <span>UI</span>
+                            </a>
+                        </li>
+                        <li class='b3'>
+                            <a href="./html/work3.html">
+                                <p class='mt150'>圣诞主题图标</p>
+                                <span>UI</span>
+                            </a>
+                        </li>
+                        <li class='b4'>
+                            <a href="./html/work4.html">
+                                <p class='mt150'>字体设计</p>
+                                <span>字体</span>
+                            </a>
+                        </li>
+                        <li class='b9'>
+                            <a href="./html/work9.html">
+                                <p class='mt150'>“不只是红包”文创设计</p>
+                                <span>文创</span>
+                            </a>
+                        </li><li class='b10'>
+                            <a href="./html/work10.html">
+                                <p class='mt150'>“三角怪”糖果包装设</p>
+                                <span>包装</span>
+                            </a>
+                        </li>
+                        <li class='b11'>
+                            <a href="./html/work11.html">
+                                <p class='mt150'>《哧溜》手工立体书</p>
+                                <span>书装/画册</span>
+                            </a>
+                        </li>
+                        <li class='b12'>
+                            <a href="./html/work12.html">
+                                <p class='mt150'>摄影师遇到插画师</p>
+                                <span>插画</span>
+                            </a>
+                        </li>
+                            
+                    </ul>
+                    <ul>
+                        <li class='b5'>
+                            <a href="./html/work5.html">
+                                <p class='mt150'>网页习作</p>
+                                <span>网页</span>
+                            </a>
+                        </li>
+                        <li class='b6'>
+                            <a href="./html/work6.html">
+                                <p class='mt150'>戊戌年生肖邮品设计</p>
+                                <span>邮品设计</span>
+                            </a>
+                        </li>
+                        <li class='b7'>
+                            <a href="./html/work7.html">
+                                <p class='mt150'>香港情人节</p>
+                                <span>动画</span>
+                            </a>
+                        </li>
+                        <li class='b8'>
+                            <a href="./html/work8.html">
+                                <p class='mt150'>神犬二白表情包</p>
+                                <span>网络表情</span>
+                            </a>
+                        </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="about-cont">
+                <img src="./images/about.png" alt="灰灰">
+                <div class="text fr">
+                    <h2>灰灰</h2>
+                    <p>视觉设计师</p>
+                    <p class="mt32">南京理工大学/视觉传达/2017.07</p>
+                    <p>514831961@qq.com</p>
+                </div>
+            </section>
     </div>
     <script >
         (function(){
-            $("..hd-menu li").click(function(){
-                $(this).addClass("active").siblings().removeClass("active");
+            spaRouters.map('/index',function(transition){
+                $('body').addClass('bd-home');  
+                $(".oh").show(); 
+                $(".about-cont,.work-cont").hide(); 
+                $(".hd-menu .home").addClass("active").siblings().removeClass("active");
+            })
+            spaRouters.map('/work',function(transition){
+                $('.work-cont .works ul').animate({scrollLeft:0}, 400);
+                $('.pre').addClass("disable");
+                $('.next').removeClass("disable");
+                $('body').removeClass('bd-home'); 
+                $(".oh,.about-cont").hide();
+                $(".work-cont").show(); 
+                $(".hd-menu .work").addClass("active").siblings().removeClass("active");
+            })
+            spaRouters.map('/about',function(transition){
+                $('body').removeClass('bd-home');  
+                $(".oh,.work-cont").hide(); 
+                $(".about-cont").show(); 
+                $(".hd-menu .about").addClass("active").siblings().removeClass("active");
+            })
+            spaRouters.init()
+            var index = 1;
+            var index2 =0; 
+            var preLen = 0;
+            $(".next").click(function(){
+                preLen = (8 - Math.round($('.works').width()/430));
+                $('.work-cont .works ul').animate({scrollLeft:430*index}, 400);
+                if (index >= preLen) {
+                    $(this).addClass("disable");
+                } else {
+                    $('.pre').removeClass("disable");
+                    index++; 
+                    index2++;
+                }
+            })
+            $(".pre").click(function(){
+                preLen = (8 - Math.round($('.works').width()/430));
+                if (index2 < 2) {
+                    $('.work-cont .works ul').animate({scrollLeft:0}, 400);
+                    $(this).addClass("disable");
+                    index=1;
+                    index2 = 0;
+                }else {
+                    index--
+                    index2--
+                    $('.work-cont .works ul').animate({scrollLeft:430*index2}, 400);
+                    $('.next').removeClass("disable");  
+                }
             })
         })()
     </script>
