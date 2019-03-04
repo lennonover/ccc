@@ -187,7 +187,7 @@ body {
 }
 .about-cont {
     display: none;
-    width: 966px; 
+    width: 976px; 
     height: 440px;
     position: absolute;
     top: 60px;
@@ -207,6 +207,7 @@ body {
 .about-cont p{
     font-size: 28px;
     font-weight: 100;	
+    font-weight: lighter;
 }
 .work-cont {
     display: none;
@@ -223,6 +224,7 @@ body {
     height: 390px;
     width: 400px;
     position: relative;
+    margin: 10px;
 }
 .work-cont .works li:hover a{
     display: block;
@@ -334,25 +336,31 @@ body {
     margin-bottom: 30px;
 }
 .book img,.book video {
-    margin: 20px auto 0;
+    margin: 32px auto 0;
     width: 800px;
     display: block;
+}
+.book6 p {
+    line-height: 56px;
 }
 .book6 .tit1 {
     width: 90%;
     height: 58px;
+    max-width: 1366px;
     margin: 20px auto 0;
     background: url(../images/6/1.jpg) no-repeat;
 }
 .book6 .tit2 {
     width: 90%;
     height: 58px;
+    max-width: 1366px;
     margin: 20px auto 0;
     background: url(../images/6/1.jpg) no-repeat;
 }
 .book6 .tit3 {
     width: 90%;
     height: 58px;
+    max-width: 1366px;
     margin: 20px auto 0;
     background: url(../images/6/10.jpg) no-repeat;
 }
@@ -364,6 +372,16 @@ body {
     max-width: 1366px;
     margin: 0 auto 20px;
 }
+.book7 .bqb{
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+.book7 .bqb img {
+    width: 291px;
+    height: 315px;
+}
+
 .book8 .bqb{
     display: flex;
     width: 70%;
@@ -371,6 +389,7 @@ body {
 }
 .book8 .bqb img {
     width: 300px;
+    height: 300px;
 }
 #btn_top {
     display: none;
