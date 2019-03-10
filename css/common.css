@@ -209,6 +209,12 @@ body {
     font-weight: 100;	
     font-weight: lighter;
 }
+.about-cont p a {
+    color: #0d0d0d;
+}
+.about-cont p a:hover {
+    text-decoration: none;
+}
 .work-cont {
     display: none;
 }
@@ -366,6 +372,10 @@ body {
 }
 .book7 img {
     width: 300px;
+}
+.book10 img{
+    width: 90%;
+    max-width: 1366px;
 }
 .book8 img {
     width: 90%;
