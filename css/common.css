@@ -377,6 +377,15 @@ body {
     width: 90%;
     max-width: 1366px;
 }
+.book10 .tit{
+    background: url(../images/10/tit.jpg) no-repeat;
+    width: 90%;
+    line-height: 46px;
+    max-width: 1366px;
+    margin: 40px auto;
+    font-size: 22px;
+    color: #fff;
+}
 .book8 img {
     width: 90%;
     max-width: 1366px;
