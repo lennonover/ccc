@@ -33,74 +33,74 @@
                 <div class="works">
                     <ul>
                         <li class='b6'>
-                            <a href="./html/work6.html">
+                            <a href="./html/work6.html" target="_Blank">
                                 <p class='mt150'>戊戌年生肖邮品设计</p>
                                 <span>邮品设计</span>
                             </a>
                         </li>
                         <li class='b9'>
-                            <a href="./html/work9.html">
+                            <a href="./html/work9.html" target="_Blank">
                                 <p class='mt150'>“不只是红包”文创设计</p>
                                 <span>文创</span>
                             </a>
                         </li><li class='b10'>
-                            <a href="./html/work10.html">
+                            <a href="./html/work10.html" target="_Blank">
                                 <p class='mt150'>“三角怪”糖果包装设</p>
                                 <span>包装</span>
                             </a>
                         </li>
                         <li class='b7'>
-                            <a href="./html/work7.html">
+                            <a href="./html/work7.html" target="_Blank">
                                 <p class='mt150'>香港情人节</p>
                                 <span>动画</span>
                             </a>
                         </li>
                         <li class='b1'>
-                            <a href="./html/work1.html">
+                            <a href="./html/work1.html" target="_Blank">
                                 <p class='mt150'>插画&立体书</p>
                                 <span>插画</span>
                             </a>
                         </li>
                          <!--<li class='b2'>
-                            <a href="./html/work2.html">
+                            <a href="./html/work2.html" target="_Blank">
                                 <p class='mt150'>拟物图标及UI控件</p>
                                 <span>UI</span>
                             </a>
                         </li>
                        <li class='b3'>
-                            <a href="./html/work3.html">
+                            <a href="./html/work3.html" target="_Blank">
                                 <p class='mt150'>圣诞主题图标</p>
                                 <span>UI</span>
                             </a>
                         </li>-->
                         <li class='b4'>
-                            <a href="./html/work4.html">
+                            <a href="./html/work4.html" target="_Blank">
                                 <p class='mt150'>字体设计</p>
                                 <span>字体</span>
                             </a>
                         </li>
                         <li class='b5'>
-                            <a href="./html/work5.html">
+                            <a href="./html/work5.html" target="_Blank">
                                 <p class='mt150'>网页设计</p>
                                 <span>网页</span>
                             </a>
                         </li>
                         
                         <!--<li class='b8'>
-                            <a href="./html/work8.html">
+                            <a href="./html/work8.html" target="_Blank">
                                 <p class='mt150'>神犬二白表情包</p>
                                 <span>网络表情</span>
                             </a>
                         </li>-->
                         
                         <!--<li class='b11'>
-                            <a href="./html/work11.html">
+                            <a href="./html/work11.html" target="_Blank">
                                 <p class='mt150'>《哧溜》手工立体书</p>
                                 <span>书装/画册</span>
                             </a>
                         </li>
                         <li class='b12'>
-                            <a href="./html/work12.html">
+                            <a href="./html/work12.html" target="_Blank">
                                 <p class='mt150'>摄影师遇到插画师</p>
                                 <span>插画</span>
                             </a>
@@ -144,34 +144,6 @@
                 $(".hd-menu .about").addClass("active").siblings().removeClass("active");
             })
             spaRouters.init()
-            var index = 1;
-            var index2 =0; 
-            var preLen = 0;
-            $(".next").click(function(){
-                preLen = (8 - Math.round($('.works').width()/430));
-                $('.work-cont .works ul').animate({scrollLeft:430*index}, 400);
-                if (index >= preLen) {
-                    $(this).addClass("disable");
-                } else {
-                    $('.pre').removeClass("disable");
-                    index++; 
-                    index2++;
-                }
-            })
-            $(".pre").click(function(){
-                preLen = (8 - Math.round($('.works').width()/430));
-                if (index2 < 2) {
-                    $('.work-cont .works ul').animate({scrollLeft:0}, 400);
-                    $(this).addClass("disable");
-                    index=1;
-                    index2 = 0;
-                }else {
-                    index--
-                    index2--
-                    $('.work-cont .works ul').animate({scrollLeft:430*index2}, 400);
-                    $('.next').removeClass("disable");  
-                }
-            })
         })()
     </script>
 </body>

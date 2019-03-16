@@ -92,9 +92,31 @@
     background: rgba(255,0,0,0.4);
 }
 body {
-    padding: 60px 100px;
+    
+    min-width: 1300px;
 } 
+html {
+    overflow-y: scroll;
+  }
+  
+  :root {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  :root body {
+    position: absolute;
+  }
+  
+  body {
+    width: 100vw;
+    overflow: hidden;
+  }
 .bd-cont {
+    padding: 0  0 60px 0;
+}
+.hd {
+    padding: 60px 100px 0 100px;
 }
 .hd-menu li {
     display: inline-block;
@@ -183,18 +205,60 @@ body {
     right: 0;
     bottom: 0; 
     margin: auto;
-    background: url(../images/oh.png);
+    background: url(../images/1.png);
+    
 }
-.about-cont {
-    display: none;
-    width: 976px; 
-    height: 440px;
+.bd-home .oh:after {
+    content: '';
     position: absolute;
-    top: 60px;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0; 
+    background: url(../images/2.png);
+    animation: eye 2.5s;
+    -webkit-animation: eye 2.5s;
+}
+@keyframes eye
+{
+    0% {opacity: 1;}
+    10% {opacity: 0;}
+    20% {opacity: 1;}
+    30% {opacity: 0;}
+    40% {opacity: 1;}
+    50% {opacity: 0;}
+    60% {opacity: 1;}
+    70% {opacity: 0;}
+    80% {opacity: 1;}
+    90% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes eye
+{
+    0% {opacity: 1;}
+    10% {opacity: 0;}
+    20% {opacity: 1;}
+    30% {opacity: 0;}
+    40% {opacity: 1;}
+    50% {opacity: 0;}
+    60% {opacity: 1;}
+    70% {opacity: 0;}
+    80% {opacity: 1;}
+    90% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.about-cont {
+    display: none;
+    width: 976px;
+    height: 440px;
+    /* position: absolute; */
+    /* top: 60px; */
+    /* left: 0; */
+    /* right: 0; */
+    /* bottom: 0; */
     margin: auto;
+    margin-top: 164px;
     font-family: PingFang-SC-Regular;
     color: #0d0d0d;
 }
@@ -220,6 +284,7 @@ body {
 }
 .work-cont .works {
     margin-top: 60px;
+    padding: 0 100px;
 }
 .work-cont .works ul{
     font-size: 0;
@@ -371,7 +436,7 @@ body {
     background: url(../images/6/10.jpg) no-repeat;
 }
 .book7 img {
-    width: 300px;
+    
 }
 .book10 img{
     width: 90%;
