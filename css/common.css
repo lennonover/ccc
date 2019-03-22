@@ -194,7 +194,7 @@ html {
     background: #fff;
 }
 .bd-home .hd-icon {
-    background: url(../images/logo.png);
+    background: url(//bossaudioandcomic-1252317822.image.myqcloud.com/activity/document/140880947109a43c710c526b41519a87.png);
 }
 .bd-home .oh {
     height: 175px;
@@ -205,7 +205,7 @@ html {
     right: 0;
     bottom: 0; 
     margin: auto;
-    background: url(../images/1.png);
+    background: url(//bossaudioandcomic-1252317822.image.myqcloud.com/activity/document/571e8c7b20c20d8bd05fc5601606f7ff.png);
     
 }
 .bd-home .oh:after {
@@ -215,9 +215,12 @@ html {
     left: 0;
     right: 0;
     bottom: 0; 
-    background: url(../images/2.png);
-    animation: eye 2.5s;
-    -webkit-animation: eye 2.5s;
+    background: url(//bossaudioandcomic-1252317822.image.myqcloud.com/activity/document/978d9d6d43fab64d9905f76660e04272.png);
+    /* animation: eye 2.5s;
+    -webkit-animation: eye 2.5s; */
+}
+.bd-home .dbn.oh:after {
+   display: none;
 }
 @keyframes eye
 {
@@ -331,7 +334,7 @@ html {
     background-size:100% 100%; 
 }
 .work-cont .works .b1 {
-    background: url(../images/works/1.png);
+    background: url(//bossaudioandcomic-1252317822.image.myqcloud.com/activity/document/30fd61c00be974401377d99446c6633f.png);
     background-size:100% 100%; 
 }
 .work-cont .works .b2 {
@@ -341,25 +344,25 @@ html {
     background: url(../images/works/3.png);
 }
 .work-cont .works .b4 {
-    background: url(../images/works/4.png);
+    background: url(//bossaudioandcomic-1252317822.image.myqcloud.com/activity/document/f0a954bcc878e8fae46bc46d538ce42b.png);
 }
 .work-cont .works .b5 {
-    background: url(../images/works/5.png);
+    background: url(//bossaudioandcomic-1252317822.image.myqcloud.com/activity/document/332cb50dcbd6779d1af1dadd926c14e7.png);
 }
 .work-cont .works .b6 {
-    background: url(../images/works/6.png);
+    background: url(//bossaudioandcomic-1252317822.image.myqcloud.com/activity/document/19a3319f783fafa2490df427953213ec.png);
 }
 .work-cont .works .b7 {
-    background: url(../images/works/7.png);
+    background: url(//bossaudioandcomic-1252317822.image.myqcloud.com/activity/document/8d3abdd925988209e19646c256f98651.png);
 }
 .work-cont .works .b8 {
     background: url(../images/works/8.png);
 }
 .work-cont .works .b9 {
-    background: url(../images/works/9.png);
+    background: url(//bossaudioandcomic-1252317822.image.myqcloud.com/activity/document/e217de63c01637e80e6cae78eb6c3f35.png);
 }
 .work-cont .works .b10 {
-    background: url(../images/works/10.png);
+    background: url(//bossaudioandcomic-1252317822.image.myqcloud.com/activity/document/3c6a6d20d6f5bfab7fff64a1b024116b.png);
 }
 .work-cont .works .b11 {
     background: url(../images/works/11.png);
@@ -407,7 +410,7 @@ html {
     margin-bottom: 30px;
 }
 .book img,.book video {
-    margin: 32px auto 0;
+    margin: 32px auto;
     width: 800px;
     display: block;
 }
@@ -436,7 +439,7 @@ html {
     background: url(../images/6/10.jpg) no-repeat;
 }
 .book7 img {
-    
+    margin: 32px auto;
 }
 .book10 img{
     width: 90%;
@@ -458,7 +461,7 @@ html {
 }
 .book7 .bqb{
     display: flex;
-    width: 70%;
+    width: 800px;
     margin: auto;
 }
 .book7 .bqb img {
